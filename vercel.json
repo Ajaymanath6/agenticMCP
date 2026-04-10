@@ -3,10 +3,7 @@
   "outputDirectory": "public",
   "functions": {
     "api/mcp.ts": {
-      "includeFiles": [
-        "mcp-server/catalog-data/**",
-        "public/blueprints/**"
-      ]
+      "includeFiles": "public/blueprints/**"
     }
   },
   "rewrites": [
