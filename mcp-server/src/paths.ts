@@ -71,17 +71,17 @@ export function resolveServerlessBlueprintsEnv(): void {
     }
   }
 
-  // Repo-root Vercel deploy: includeFiles bundles `mcp-server/catalog-data/**`
-  // under `/var/task/mcp-server/catalog-data`, not `/var/task/catalog-data`.
+  // Vercel: prefer `public/blueprints` when bundled via includeFiles (always in Git);
+  // `mcp-server/catalog-data` is gitignored and may be absent from the lambda package.
+  push(path.join(cwd, 'public', 'blueprints'))
   push(path.join(cwd, 'mcp-server', 'catalog-data'))
   push(path.join(cwd, 'catalog-data'))
-  push(path.join(cwd, 'public', 'blueprints'))
 
   for (let depth = 0; depth <= 6; depth++) {
     const base = path.resolve(here, ...Array(depth).fill('..'))
+    push(path.join(base, 'public', 'blueprints'))
     push(path.join(base, 'mcp-server', 'catalog-data'))
     push(path.join(base, 'catalog-data'))
-    push(path.join(base, 'public', 'blueprints'))
   }
 
   for (const dir of candidates) {
