@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "id": "layout-v234sl",
+  "component": "div",
+  "importId": "LayoutV234slComponent",
+  "data": {
+    "imageUrl": "/generated/layout-v234sl-thumbnail.png",
+    "imageAlt": "Create a formtitle an dsubtitile and below that with add text inout feild bel...",
+    "sealed": true,
+    "sourceHtml": "<div class=\"flex min-w-0 w-full flex-col gap-0\" data-published-layout=\"true\">\n<h2 class=\"font-sans text-xl font-semibold text-brandcolor-textstrong c_md:text-2xl\">Form Title</h2>\n<p class=\"text-sm text-brandcolor-textweak\">And Subtitle</p>\n\n<div class=\"w-full\" style=\"width:280px;box-sizing:border-box\"><label for=\"text-field-9dba37b3-bb99-44fc-a99b-9484b1753357\" class=\"mb-1 block text-xs font-medium text-brandcolor-textstrong\">Text input field</label><input id=\"text-field-9dba37b3-bb99-44fc-a99b-9484b1753357\" type=\"text\" name=\"textInputField\" autocomplete=\"off\" class=\"text-field-canvas-input w-full\" placeholder=\"Type here…\" required /></div>\n\n<div class=\"w-full\" style=\"width:280px;box-sizing:border-box\"><label for=\"confirm-pw-9471e5c9-153e-4b90-9469-212703a023a4\" class=\"mb-1 block text-xs font-medium text-brandcolor-textstrong\">Confirm password</label><input id=\"confirm-pw-9471e5c9-153e-4b90-9469-212703a023a4\" type=\"password\" name=\"confirmPassword\" autocomplete=\"new-password\" class=\"confirm-password-canvas-input w-full\" placeholder=\"••••••••\" required minlength=\"8\" /></div>\n\n<button type=\"button\" class=\"inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-brandcolor-white bg-brandcolor-secondary hover:bg-brandcolor-secondaryhover active:shadow-button-press focus:outline-none focus:ring-0 appearance-none border-0\">Secondary button</button>\n</div>"
+  }
+}

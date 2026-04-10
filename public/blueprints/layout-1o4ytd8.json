@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "id": "layout-1o4ytd8",
+  "component": "div",
+  "importId": "Layout1o4ytd8Component",
+  "data": {
+    "imageUrl": "/generated/layout-1o4ytd8-thumbnail.png",
+    "imageAlt": "creat a from  with titile sub title   primary buuton an dbelow taht cnavs card",
+    "sealed": true,
+    "sourceHtml": "<div class=\"flex min-w-0 w-full flex-col gap-0\" data-published-layout=\"true\">\n<h2 class=\"font-sans text-xl font-semibold text-brandcolor-textstrong c_md:text-2xl\">From</h2>\n<p class=\"text-sm text-brandcolor-textweak\">sub title</p>\n\n<button type=\"button\" class=\"inline-flex items-center justify-center rounded-md border-0 px-4 py-2 text-sm font-medium text-brandcolor-white bg-brandcolor-primary hover:bg-brandcolor-primaryhover active:shadow-button-press focus:outline-none focus:ring-0\">Primary button</button>\n\n<article class=\"rounded-lg border border-brandcolor-strokeweak bg-brandcolor-white shadow-card px-3 py-3\" style=\"width:280px;box-sizing:border-box\"><h3 class=\"font-sans text-base font-semibold text-brandcolor-textstrong\">Canvas card</h3><p class=\"mt-1 text-sm text-brandcolor-textweak\">Subtitle for context</p><p class=\"mt-2 text-sm leading-relaxed text-brandcolor-textweak\">Paragraph text uses text-brandcolor-textweak with relaxed leading. Drag this card anywhere on the canvas.</p></article>\n</div>"
+  }
+}

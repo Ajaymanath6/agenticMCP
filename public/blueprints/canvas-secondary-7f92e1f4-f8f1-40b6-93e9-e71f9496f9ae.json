@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "id": "canvas-secondary-7f92e1f4-f8f1-40b6-93e9-e71f9496f9ae",
+  "component": "div",
+  "importId": "CanvasSecondary7f92e1f4F8f140b693e9E71f9496f9aeComponent",
+  "data": {
+    "imageUrl": "/generated/canvas-secondary-7f92e1f4-f8f1-40b6-93e9-e71f9496f9ae-thumbnail.png",
+    "imageAlt": "Secondary button",
+    "sealed": true,
+    "sourceHtml": "<button type=\"button\" class=\"inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-brandcolor-white bg-brandcolor-secondary hover:bg-brandcolor-secondaryhover active:shadow-button-press focus:outline-none focus:ring-0 appearance-none border-0\">Secondary button</button>"
+  }
+}

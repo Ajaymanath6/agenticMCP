@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CatalogBlueprint",
+  "type": "object",
+  "properties": {
+    "schemaVersion": { "type": "string" },
+    "id": { "type": "string" },
+    "component": { "type": "string" },
+    "importId": { "type": "string" },
+    "data": { "type": "object" },
+    "children": { "type": "array" }
+  }
+}

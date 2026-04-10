@@ -1,0 +1,27 @@
+{
+  "name": "agentic-catalog-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "vercel:prepare": "node scripts/copy-blueprints.mjs",
+    "vercel-build": "npm run build && npm run vercel:prepare",
+    "http:local": "node dist/src/http-local.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@vercel/node": "^5.5.16",
+    "typescript": "^6.0.2"
+  }
+}

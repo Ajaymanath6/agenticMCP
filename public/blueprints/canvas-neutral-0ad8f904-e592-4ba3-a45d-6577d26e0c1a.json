@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "id": "canvas-neutral-0ad8f904-e592-4ba3-a45d-6577d26e0c1a",
+  "component": "div",
+  "importId": "CanvasNeutral0ad8f904E5924ba3A45d6577d26e0c1aComponent",
+  "data": {
+    "imageUrl": "/generated/canvas-neutral-0ad8f904-e592-4ba3-a45d-6577d26e0c1a-thumbnail.png",
+    "imageAlt": "Neutral button",
+    "sealed": true,
+    "sourceHtml": "<button type=\"button\" class=\"inline-flex items-center justify-center rounded-md border border-1.5 border-brandcolor-strokeweak bg-brandcolor-white px-4 py-2 text-sm font-medium text-brandcolor-textstrong hover:bg-brandcolor-strokelight active:shadow-border-inset-strokelight focus:outline-none focus:ring-0 appearance-none\">Neutral button</button>"
+  }
+}
