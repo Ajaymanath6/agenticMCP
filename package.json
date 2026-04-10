@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "vercel-build": "node mcp-server/scripts/copy-blueprints.mjs && npm run build"
+    "build": "tsc -p mcp-server/tsconfig.json",
+    "vercel-build": "echo '--- STEP 1: Starting vercel-build script. ---' && node mcp-server/scripts/copy-blueprints.mjs && echo '--- STEP 2: Copy finished. Now running build. ---' && npm run build && echo '--- STEP 3: Vercel build complete. ---'"
   },
   "dependencies": {
     "cors": "^2.8.5",
