@@ -8,13 +8,12 @@
     "vercel-build": "echo '--- STEP 1: Starting vercel-build script. ---' && node mcp-server/scripts/copy-blueprints.mjs && echo '--- STEP 2: Copy finished. Now running build. ---' && npm run build && echo '--- STEP 3: Vercel build complete. ---'"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.12.12",
-    "typescript": "^5.4.5"
+    "@types/node": "^22.15.21",
+    "@vercel/node": "^5.5.16",
+    "typescript": "^5.9.3"
   }
 }
