@@ -1,10 +1,9 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { runMcpHttpRequest } from '../src/mcp-http-handler.js'
+import { runMcpHttpRequest } from '../mcp-server/src/mcp-http-handler.js'
 
 /**
  * Vercel serverless: Streamable HTTP MCP (stateless).
  * URL: /api/mcp (or /mcp via rewrite in vercel.json).
- * Use this entry when the Vercel project Root Directory is `mcp-server`.
  */
 export default async function handler(
   req: VercelRequest,
