@@ -48,8 +48,15 @@ export function getBlueprintsDir(): string {
  * is missing from the bundle but the catalog lives elsewhere (or cwd differs from the bundle root).
  */
 export function resolveServerlessBlueprintsEnv(): void {
-  if (process.env.AGENTIC_BLUEPRINTS_DIR?.trim()) {
-    return
+  const existing = process.env.AGENTIC_BLUEPRINTS_DIR?.trim()
+  if (existing) {
+    const resolved = path.resolve(existing)
+    if (fs.existsSync(path.join(resolved, '_catalog.json'))) {
+      return
+    }
+    // e.g. Vercel env `catalog-data` → /var/task/catalog-data while bundle uses
+    // mcp-server/catalog-data — drop bad override and discover below.
+    delete process.env.AGENTIC_BLUEPRINTS_DIR
   }
 
   const here = path.dirname(fileURLToPath(import.meta.url))
@@ -64,11 +71,15 @@ export function resolveServerlessBlueprintsEnv(): void {
     }
   }
 
+  // Repo-root Vercel deploy: includeFiles bundles `mcp-server/catalog-data/**`
+  // under `/var/task/mcp-server/catalog-data`, not `/var/task/catalog-data`.
+  push(path.join(cwd, 'mcp-server', 'catalog-data'))
   push(path.join(cwd, 'catalog-data'))
   push(path.join(cwd, 'public', 'blueprints'))
 
   for (let depth = 0; depth <= 6; depth++) {
     const base = path.resolve(here, ...Array(depth).fill('..'))
+    push(path.join(base, 'mcp-server', 'catalog-data'))
     push(path.join(base, 'catalog-data'))
     push(path.join(base, 'public', 'blueprints'))
   }
