@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "vercel-build": "node scripts/copy-blueprints.mjs && npm run build"
+    "vercel-build": "node mcp-server/scripts/copy-blueprints.mjs && npm run build"
   },
   "dependencies": {
     "cors": "^2.8.5",
